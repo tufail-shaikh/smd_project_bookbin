@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">BOOK BIN</string>
+
+    <string name="title_activity_login_page">loginPage</string>
+
+    <string name="email_username">Email</string>
+
+    <string name="password">Password</string>
+
+    <string name="login">Login</string>
+
+    <string name="signUp">Register</string>
+
+    <string name="NoAccount">Don\'t have an account?</string>
+
+    <string name="forgot_password">Forgot Password</string>
+
+    <string name="signup_using">Or Sign Up Using</string>
+
+    <string name="Reset_Password">Reset Password</string>
+
+    <string name="next">Next</string>
+
+    <string name="backhome">Back to Home</string>
+
+    <string name="confirmpassword">Confirm Password</string>
+
+    <string name="Register_Person">Register Yourself</string>
+
+    <string name="name">Name</string>
+
+    <string name="number">Mobile Number</string>
+
+    <string name="register">Register</string>
+
+    <string name="remember_me">Remember me</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

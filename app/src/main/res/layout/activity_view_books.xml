@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewBooks">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="-210dp"
+        android:src="@drawable/circle"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/topPickView"
+        android:layout_width="wrap_content"
+        android:text="Our Top Picks"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:scrollbars="none"
+            android:id="@+id/topPickScroll"
+            android:layout_below="@+id/topPickView"
+            android:layout_height="200dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewTopPicks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/bestSellingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Selling"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/topPickScroll"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/bestSellingScroll"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="200dp"
+        android:layout_below="@+id/bestSellingView">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewBestSelling"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/genreView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catalogue"
+        android:layout_below="@+id/bestSellingScroll"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/genreScroll"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/genreView"
+        android:scrollbars="none"
+        android:layout_height="200dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewGenres"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_navigation_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation"
+            android:background="#5ABD8C"
+            />
+    </RelativeLayout>
+</RelativeLayout>

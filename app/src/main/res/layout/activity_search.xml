@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <TextView
+
+        android:layout_height="?actionBarSize"
+        android:layout_width="match_parent"
+        android:text="Search Book"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#FC151212"
+        android:textStyle="bold"
+        android:id="@+id/action_bar"
+        android:background="#5ABD8C"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar"
+        android:hint="Search any book..."
+        android:paddingTop="10dp"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="5dp"
+        android:gravity="left"
+        android:iconifiedByDefault="false"
+        android:id="@+id/search_EditText"
+        android:padding="10dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/search_EditText"
+
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:id="@+id/previousSearch"
+        android:layout_margin="10dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/previousSearch"
+        android:id="@+id/rv"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottom_navigation_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#5ABD8C"
+            app:menu="@menu/bottom_navigation" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

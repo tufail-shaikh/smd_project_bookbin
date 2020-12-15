@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".book_details">
+
+    <ImageView
+        android:layout_width="230dp"
+        android:id="@+id/bookcoverdisplay"
+        android:layout_margin="30dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/business_ek1"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookcoverdisplay"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:id="@+id/bookTitleDisplay"
+            android:layout_width="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+            android:text="The Heart of Hell"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/bookAuthorDisplay"
+            android:layout_width="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:hint="Mitch Weiss"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/bookPriceDisplay"
+            android:layout_width="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:hint="$50"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/bookDescriptionDisplay"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:hint="Description....."
+            android:textSize="12sp"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+
+            <Button
+                android:id="@+id/btnAddToCart"
+
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:text="Add to Cart"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:onClick="addToCart"
+                android:background="@drawable/add2cart_btn"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+            <Button
+                android:id="@+id/btnAddToWishList"
+
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:text="Add to Wishlist"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:onClick="addToWishlist"
+                android:background="@drawable/add2wishlist_btn"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

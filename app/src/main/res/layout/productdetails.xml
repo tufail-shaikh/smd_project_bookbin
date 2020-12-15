@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+
+    <ImageView
+        android:id="@+id/bookCover"
+        android:layout_width="450dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/hp" />
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookCover"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Harry Potter and the Chamber of Secrets"></TextView>
+
+    <TextView
+        android:id="@+id/bookDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookTitle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    </TextView>
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to cart"
+        android:layout_below="@id/bookDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+></Button>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_below="@id/btnAddToCart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        ></Button>
+
+</RelativeLayout>

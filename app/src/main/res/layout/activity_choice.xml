@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/choice_screen"
+    android:layout_height="match_parent"
+    tools:context=".Choice">
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signUp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_shape"
+        android:onClick="SignIn"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="3"
+        android:shadowDy="1"
+        android:shadowRadius="4"
+        android:text="Sign In"
+        android:typeface="sans"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_shape"
+        android:textAllCaps="false"
+        android:onClick="SignUp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Sign Up"
+        android:typeface="sans"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp">
+
+    </Button>
+
+</RelativeLayout>

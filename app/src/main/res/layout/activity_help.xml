@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/help"
+        android:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        android:title="Help"
+        android:layout_height="?attr/actionBarSize"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For help or any query email us at bookbin@gmail.com"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
